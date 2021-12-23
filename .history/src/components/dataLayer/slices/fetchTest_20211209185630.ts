@@ -1,0 +1,17 @@
+import { createAsyncThunk } from "@reduxjs/toolkit";
+import { Todo } from "../types";
+
+export const fetchTest = createAsyncThunk<Todo[],
+
+number
+
+>(
+  "todos/fetch",
+
+  async () => {
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const data: Todo[] = await res.json();
+
+    return data;
+  }
+);

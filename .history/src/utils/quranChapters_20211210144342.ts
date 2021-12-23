@@ -1,0 +1,11 @@
+export const chapters = [
+    {
+        id: 1,
+        title: 'Al-Fatihah'
+    },
+    {
+        id: 1,
+        title: 'Al-Baqarah'
+    },
+    {}
+]

@@ -1,0 +1,5 @@
+interface DefaultStateI {
+
+}
+
+const default
